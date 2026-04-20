@@ -1,0 +1,73 @@
+Apr-20 16:36:18.157 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
+Apr-20 16:36:18.220 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.10.4
+Apr-20 16:36:18.248 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/harikrishnan/.nextflow/plugins; core-plugins: nf-amazon@3.4.4,nf-azure@1.20.2,nf-cloudcache@0.5.0,nf-codecommit@0.5.0,nf-console@1.3.0,nf-google@1.23.5,nf-k8s@1.2.2,nf-tower@1.17.5,nf-wave@1.16.1
+Apr-20 16:36:18.273 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Apr-20 16:36:18.273 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Apr-20 16:36:18.276 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Apr-20 16:36:18.289 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Apr-20 16:36:18.407 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Apr-20 16:36:18.432 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/harikrishnan/nextflow-beginner-project/nextflow.config
+Apr-20 16:36:18.434 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/harikrishnan/nextflow-beginner-project/nextflow.config
+Apr-20 16:36:18.454 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Apr-20 16:36:18.831 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Apr-20 16:36:18.832 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Apr-20 16:36:18.849 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/harikrishnan/.nextflow/secrets/store.json
+Apr-20 16:36:18.853 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@2274160] - activable => nextflow.secret.LocalSecretsProvider@2274160
+Apr-20 16:36:18.863 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Apr-20 16:36:18.873 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [sad_thompson] DSL2 - revision: 5ae2e9b6cb
+Apr-20 16:36:18.912 [main] DEBUG nextflow.Session - Session UUID: 497d6c8a-57b7-4055-9463-78f227d2a016
+Apr-20 16:36:18.912 [main] DEBUG nextflow.Session - Run name: sad_thompson
+Apr-20 16:36:18.913 [main] DEBUG nextflow.Session - Executor pool size: 20
+Apr-20 16:36:18.919 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Apr-20 16:36:18.922 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=60; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Apr-20 16:36:18.941 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.10.4 build 11173
+  Created: 10-02-2026 15:17 UTC (20:47 IDT)
+  System: Linux 5.15.0-139-generic
+  Runtime: Groovy 4.0.28 on OpenJDK 64-Bit Server VM 17.0.15+6-Ubuntu-0ubuntu120.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 528315@student16-OptiPlex-7000 [127.0.1.1]
+  CPUs: 20 - Mem: 31 GB (2.8 GB) - Swap: 16 GB (15.8 GB)
+Apr-20 16:36:18.965 [main] DEBUG nextflow.Session - Work-dir: /home/harikrishnan/nextflow-beginner-project/work [ext2/ext3]
+Apr-20 16:36:18.966 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/harikrishnan/nextflow-beginner-project/bin
+Apr-20 16:36:18.973 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Apr-20 16:36:18.979 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Apr-20 16:36:18.981 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+Apr-20 16:36:19.016 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Apr-20 16:36:19.022 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 21; maxThreads: 1000
+Apr-20 16:36:19.064 [main] DEBUG nextflow.Session - Session start
+Apr-20 16:36:19.263 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Apr-20 16:36:19.270 [main] INFO  nextflow.Nextflow - 
+====================================
+ S T A R T E R   P I P E L I N E
+====================================
+input   : /home/harikrishnan/nextflow-beginner-project/data/*.txt
+outdir  : /home/harikrishnan/nextflow-beginner-project/results
+====================================
+
+Apr-20 16:36:19.422 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Apr-20 16:36:19.422 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-20 16:36:19.430 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Apr-20 16:36:19.435 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=20; memory=31 GB; capacity=20; pollInterval=100ms; dumpInterval=5m
+Apr-20 16:36:19.437 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Apr-20 16:36:19.455 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'COUNT_LINES': maxForks=0; fair=false; array=0
+Apr-20 16:36:19.489 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Apr-20 16:36:19.489 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-20 16:36:19.490 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'ADD_GREETING': maxForks=0; fair=false; array=0
+Apr-20 16:36:19.503 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: ADD_GREETING, COUNT_LINES
+Apr-20 16:36:19.505 [main] DEBUG nextflow.Session - Igniting dataflow network (3)
+Apr-20 16:36:19.520 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > COUNT_LINES
+Apr-20 16:36:19.521 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /home/harikrishnan/nextflow-beginner-project/data/; pattern: *.txt; options: [:]
+Apr-20 16:36:19.521 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > ADD_GREETING
+Apr-20 16:36:19.522 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_982b5550ae215665: /home/harikrishnan/nextflow-beginner-project/main.nf
+Apr-20 16:36:19.522 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Apr-20 16:36:19.522 [main] DEBUG nextflow.Session - Session await
+Apr-20 16:36:19.524 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - No such file or directory: /home/harikrishnan/nextflow-beginner-project/data/ -- Skipping visit
+Apr-20 16:36:19.536 [main] DEBUG nextflow.Session - Session await > all processes finished
+Apr-20 16:36:19.541 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Apr-20 16:36:19.541 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Apr-20 16:36:19.552 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Apr-20 16:36:19.715 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Apr-20 16:36:19.758 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Apr-20 16:36:19.760 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

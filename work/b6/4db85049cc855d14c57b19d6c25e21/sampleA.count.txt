@@ -1,0 +1,1 @@
+/home/harikrishnan/nextflow-beginner-project/work/54/61872d5ad13819e24e08e50917f0a8/sampleA.count.txt
